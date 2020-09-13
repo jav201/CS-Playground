@@ -72,8 +72,6 @@ def queens(obj_board):
         return obj_board
     # if not... check available pos and set a queen...
     for x,y in obj_board.get_unattacked_positions():
-        print(obj_board.get_unattacked_positions())
-        print(obj_board.queens_positions)
         obj_board.set_piece(x,y)
         # Save the board with a placed queen
         # THIS DECLARATION ENTERS TO A RECURSIVE SUBLEVEL
@@ -89,9 +87,7 @@ def queens(obj_board):
     # When there are no more available spaces and no solution
     # the last placed queen gets removed from the position list
     # and the previous saved boeard gets used!!!!
-    print(obj_board.queens_positions)
     obj_board.queens_positions.pop()
-    print(obj_board.queens_positions)
     obj_board.reset_board()
     obj_board.cancel_out()
     return False
