@@ -13,3 +13,5 @@ def fib_rec_mem(n):
 
 print(fib_rec_mem(10))
 print(fib_dict.values())
+
+[1,2,3,4].insert()
