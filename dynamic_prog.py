@@ -1,5 +1,5 @@
 # Longest common substring
-word1 = 'acomadre'
+word1 = 'comadre'
 word2 = 'comadreja'
 word3 = 'jerecuaro'
 
