@@ -87,8 +87,12 @@ def queens(obj_board):
     # When there are no more available spaces and no solution
     # the last placed queen gets removed from the position list
     # and the previous saved boeard gets used!!!!
+    
+    # Eliminates the last queen positioned
     obj_board.queens_positions.pop()
+    # ... then the board is to be reset
     obj_board.reset_board()
+    # ... to finally cancel out the spaces with the (so far) rightfully placed queens
     obj_board.cancel_out()
     return False
 

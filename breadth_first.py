@@ -21,13 +21,14 @@ graph['thom'] = []
 graph['jonny'] = []
 
 
-def breadth_first(name):
+def breadth_first(name) -> bool:
     search_queue = deque()
     search_queue += graph[name]
     searched = [] # Already searched nodes
     while search_queue:
         person = search_queue.popleft()
         if not person in searched:
+            # We are looking for a person wuth first letter name 'p'
             if person[0] == 'p':
                 print('P-erson found!', person)
                 return True
@@ -37,5 +38,4 @@ def breadth_first(name):
     return False
 
 breadth_first('you')
-
     
