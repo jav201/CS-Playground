@@ -27,6 +27,7 @@ def breadth_first(name) -> bool:
     searched = [] # Already searched nodes
     while search_queue:
         person = search_queue.popleft()
+        print(person)
         # print(person, search_queue)
         if not person in searched:
             # We are looking for a person wuth first letter name 'p'
@@ -38,5 +39,18 @@ def breadth_first(name) -> bool:
                 searched.append(person)
     return False
 
+
+def breadth_first2(name, searchedName):
+    searchQueue = deque()
+    searchQueue += graph[name]
+    while searchQueue:
+        person = searchQueue.popleft()
+        print(person)
+        if person == searchedName:
+            return person
+        searchQueue += graph[person]
+
+
 breadth_first('you')
+breadth_first2('you', 'jonny')
     
