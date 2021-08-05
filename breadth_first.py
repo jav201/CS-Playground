@@ -27,6 +27,7 @@ def breadth_first(name) -> bool:
     searched = [] # Already searched nodes
     while search_queue:
         person = search_queue.popleft()
+        # print(person, search_queue)
         if not person in searched:
             # We are looking for a person wuth first letter name 'p'
             if person[0] == 'p':
