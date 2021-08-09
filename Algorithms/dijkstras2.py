@@ -1,5 +1,3 @@
-# With the graph from the book grokking - Algorithms by Aditya Bhargava PAge 132
-
 # Declare Nodes ####
 graph = {}
 # Node a
@@ -31,6 +29,7 @@ graph['f'] = {}
 
 # Declare costs, as seen from the start ####
 infinity = float('inf')
+
 costs = {}
 costs['b'] = 2
 costs['c'] = 4
@@ -68,7 +67,6 @@ while node is not None:
             parents[n] = node
     processed.append(node)
     node = find_lowest_cost_node(costs)
-
 
 print(parents)
 print(costs)
