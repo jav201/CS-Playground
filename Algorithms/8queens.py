@@ -35,7 +35,7 @@ class board(object):
         y_listb = [y for y in range(y-1,-1, -1)]
         f_list = [[x,y] for x,y in zip(x_listf, y_listf)]
         b_list = [[x,y] for x,y in zip(x_listb, y_listb)]
-        return (f_list + b_list)s
+        return (f_list + b_list)
 
     def detect_diagonal2(self,x,y):
         # Return a diagonal set of coordinates positive rate
