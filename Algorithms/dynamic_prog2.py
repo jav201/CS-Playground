@@ -2,7 +2,7 @@
 # word1 = 'fosh'
 # word2 = 'fort'
 
-word1 = 'acomadre'
+word1 = 'comadre'
 word2 = 'comadreja'
 # word2 = 'jerecuaro'
 

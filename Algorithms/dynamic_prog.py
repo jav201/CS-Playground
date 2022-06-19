@@ -12,7 +12,8 @@ for i in range(len(word1)):
         if word1[i] == word2[j]:
             word_matrix[i][j] = 1 + word_matrix[i-1][j-1]
         else:
-            word_matrix[i][j] = 0
+            pass
+            # word_matrix[i][j] = 0
 
 # Some fancy printing            
 print('  ',end='')
